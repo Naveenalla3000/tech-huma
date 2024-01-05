@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+.slick-slide > div{
+  margin: 0 12px;
+}
+.gradient-background {
+  background: linear-gradient(to right, #f74a00d8, #f74a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+select {
+  -webkit-appearance: none; /* Reset the default appearance */
+  margin-left: 4px; /* Add margin to the select element */
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translate(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translate(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
